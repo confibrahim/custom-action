@@ -1,0 +1,20 @@
+name : Ibrahim's Custom Action 
+
+
+description: Greet someone 
+
+inputs: 
+ who-to-greet: 
+  description: who to greet 
+  required : true 
+  defualt: Hello 
+
+outputs:
+  time: 
+    description: The time we greeted you
+
+runs:
+ using: node20 
+ main  : custom-js/dist/index.js
+
+
